@@ -244,7 +244,7 @@ h3 {
 }
 
 .card-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .problem-card,
@@ -370,4 +370,27 @@ h3 {
   .section {
     padding: 4rem 0;
   }
+}
+
+.form-status {
+  margin: 1rem 0;
+}
+
+.success-message,
+.error-message {
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.success-message {
+  background: #e8f8ee;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.error-message {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
 }

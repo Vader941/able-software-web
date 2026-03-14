@@ -7,3 +7,5 @@ if (menuToggle && siteNav) {
     menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();
