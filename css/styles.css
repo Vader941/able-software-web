@@ -394,3 +394,10 @@ h3 {
   color: #991b1b;
   border: 1px solid #fecaca;
 }
+
+.cta-note {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
