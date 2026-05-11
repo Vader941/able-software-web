@@ -57,6 +57,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   />
   <link rel="icon" href="images/favicon.ico" sizes="any" />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TM1E4BGZ6V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TM1E4BGZ6V');
+</script>
 </head>
 <body>
   <header class="site-header">
