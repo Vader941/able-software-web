@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mobile Optimization Demo | Able Software & Web</title>
+  <meta
+    name="description"
+    content="An interactive demo showing how a website can look fine on desktop but become hard to use on a phone without mobile optimization."
+  />
+
+  <link rel="stylesheet" href="mobile-demo.css" />
+</head>
+
+<body class="comparison-page">
+  <header class="comparison-header">
+    <div class="comparison-container comparison-nav">
+      <a href="../../index.html" class="comparison-brand">
+        Able Software & Web
+      </a>
+
+        <nav class="comparison-links" aria-label="Demo navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#services">Services</a>
+        <a href="../../demos.html">All Demos</a>
+        <a href="../../contact.php" class="comparison-nav-cta">Request Review</a>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="comparison-hero">
+      <div class="comparison-container comparison-hero-grid">
+        <div>
+          <p class="comparison-eyebrow">Mobile Optimization Demo</p>
+          <h1>Desktop can look fine while the phone experience falls apart.</h1>
+          <p>
+            This demo uses a fake restaurant website, Ember & Grain, to show how the
+            same business information can feel very different on a phone when the
+            layout is not optimized.
+          </p>
+        </div>
+
+        <div class="comparison-note">
+          <h2>What to look for</h2>
+          <ul>
+            <li>Can you read the text comfortably?</li>
+            <li>Are the buttons easy to tap?</li>
+            <li>Is the phone number easy to find?</li>
+            <li>Does the layout guide customers toward action?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="comparison-container">
+        <div class="comparison-section-heading">
+          <p class="comparison-eyebrow">Interactive Comparison</p>
+          <h2>Same restaurant. Different phone experience.</h2>
+          <p>
+            The desktop preview stays the same. Use the phone controls to switch
+            between an unoptimized phone layout and a mobile-friendly version.
+          </p>
+        </div>
+
+        <p class="mobile-viewer-note">
+          Viewing this on a phone? The phone comparison appears first. The desktop
+          version is shown below as a reference.
+        </p>
+
+        <div class="demo-stage">
+          <article class="preview-card desktop-preview-card">
+            <div class="preview-card-header">
+              <div>
+                <p class="preview-label">Desktop View</p>
+                <h3>Looks professional on a computer</h3>
+              </div>
+
+              <div class="browser-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="browser-frame">
+              <iframe
+                src="desktop-view.html"
+                title="Desktop preview of Ember & Grain restaurant website"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <p class="preview-caption">
+            The desktop version looks polished and easy to use on a larger screen.
+            </p>
+          </article>
+
+          <article class="preview-card phone-preview-card">
+            <div class="preview-card-header">
+              <div>
+                <p class="preview-label">Phone View</p>
+                <h3 id="phonePreviewTitle">Unoptimized phone layout</h3>
+              </div>
+            </div>
+
+            <div class="phone-toggle" role="group" aria-label="Switch phone preview">
+              <button
+                type="button"
+                class="phone-toggle-button active"
+                data-phone-view="bad"
+                aria-pressed="true"
+              >
+                Unoptimized
+              </button>
+
+              <button
+                type="button"
+                class="phone-toggle-button"
+                data-phone-view="good"
+                aria-pressed="false"
+              >
+                Optimized
+              </button>
+            </div>
+
+            <div class="phone-frame-shell">
+              <div class="phone-speaker" aria-hidden="true"></div>
+
+              <iframe
+                id="phonePreview"
+                src="mobile-bad.html"
+                title="Phone preview of Ember & Grain restaurant website"
+              ></iframe>
+            </div>
+            <div id="phoneCaption" class="phone-caption">
+            <strong>Unoptimized:</strong> The desktop layout is being forced into a phone-sized screen, making text, navigation, and buttons harder to use.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section comparison-takeaway">
+      <div class="comparison-container takeaway-grid">
+        <div>
+          <p class="comparison-eyebrow">The Point</p>
+          <h2>Mobile optimization is not just about shrinking a website.</h2>
+          <p>
+            A mobile-friendly site should reorganize the experience around how people
+            actually use a phone: quick reading, easy tapping, clear contact options,
+            and fewer obstacles between interest and action.
+          </p>
+        </div>
+
+        <div class="takeaway-card">
+          <h3>If your site looks more like the unoptimized version...</h3>
+          <p>
+            Able Software & Web can review your current website, identify mobile
+            usability issues, and recommend practical improvements that fit your
+            business or nonprofit.
+          </p>
+
+            <div class="demo-actions">
+            <a href="../../contact.php" class="comparison-button">
+                Request an Online Presence Review
+            </a>
+            <a href="../../index.html" class="comparison-button-secondary">
+                Back to Able Software & Web
+            </a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="comparison-footer">
+    <div class="comparison-container comparison-footer-grid">
+      <p>© Able Software & Web LLC</p>
+
+    </div>
+  </footer>
+
+  <script src="mobile-demo.js"></script>
+</body>
+</html>

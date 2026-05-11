@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=980" />
+
+  <title>Ember & Grain | Unoptimized Mobile Demo</title>
+  <meta
+    name="description"
+    content="Unoptimized mobile demo page for the Ember & Grain mobile optimization example."
+  />
+
+  <link rel="stylesheet" href="mobile-demo.css" />
+</head>
+
+<body class="restaurant-page bad-mobile-demo">
+  <div class="bad-mobile-site">
+    <header class="restaurant-header">
+      <div class="restaurant-container restaurant-nav">
+        <a href="#home" class="restaurant-brand" aria-label="Ember & Grain home">
+          <span class="brand-name">Ember & Grain</span>
+          <span class="brand-tagline">Crafted Flavors. Urban Roots.</span>
+        </a>
+
+        <nav class="restaurant-links" aria-label="Restaurant navigation">
+          <a href="#home">Home</a>
+          <a href="#story">Our Story</a>
+          <a href="#menu">The Menu</a>
+          <a href="#events">Private Events</a>
+          <a href="#reservations">Reservations</a>
+        </nav>
+
+        <a href="#reservations" class="restaurant-nav-button">Book a Table</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="restaurant-hero">
+        <div class="restaurant-container restaurant-hero-grid">
+          <div class="restaurant-hero-copy">
+            <p class="restaurant-eyebrow">Downtown Café & Bistro</p>
+            <h1>Crafted flavors in the heart of downtown.</h1>
+            <p>
+              Ember & Grain brings together house-roasted coffee, Japanese-inspired
+              comfort food, and a warm evening bistro experience in one downtown
+              gathering place.
+            </p>
+
+            <div class="restaurant-actions">
+              <a href="#reservations" class="restaurant-button restaurant-button-primary">
+                Book a Table
+              </a>
+              <a href="#menu" class="restaurant-button restaurant-button-secondary">
+                View Full Menu
+              </a>
+            </div>
+          </div>
+
+          <div class="restaurant-hero-image">
+            <img
+              src="images/cooking.jpg"
+              alt="Chef cooking in a restaurant kitchen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="restaurant-section restaurant-feature-section">
+        <div class="restaurant-container restaurant-split">
+          <div class="restaurant-image-card">
+            <img
+              src="images/coffee-on-table.jpg"
+              alt="Latte on a wooden table"
+            />
+          </div>
+
+          <div>
+            <p class="restaurant-eyebrow">Morning at Ember</p>
+            <h2>Coffee, quiet tables, and a better start downtown.</h2>
+            <p>
+              Start the day with house-roasted espresso, warm wood tones, and
+              breakfast-friendly service for downtown commuters, remote workers,
+              and early meetings.
+            </p>
+            <a href="#pickup" class="restaurant-text-link">Order Pickup →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="restaurant-section restaurant-menu-section">
+        <div class="restaurant-container">
+          <div class="restaurant-section-heading">
+            <p class="restaurant-eyebrow">Featured Menu</p>
+            <h2>Comfort food with a refined downtown edge.</h2>
+            <p>
+              A small preview of the flavors Ember & Grain is known for, from
+              morning coffee to shareable plates and dinner entrées.
+            </p>
+          </div>
+
+          <div class="restaurant-menu-grid">
+            <article class="restaurant-menu-card">
+              <p class="restaurant-category">Small Plates</p>
+              <h3>Sea Salt Edamame</h3>
+              <p>
+                Steamed young soybean pods tossed in Maldon smoked sea salt.
+              </p>
+            </article>
+
+            <article class="restaurant-menu-card restaurant-menu-card-featured">
+              <img
+                src="images/plated-food.jpg"
+                alt="Miso glazed chicken with rice, slaw, and edamame"
+              />
+              <div>
+                <p class="restaurant-category">Entrées</p>
+                <h3>Miso-Glazed Chicken</h3>
+                <p>
+                  Pan-seared chicken thighs served with jasmine rice, sesame slaw,
+                  and a lemon wedge.
+                </p>
+              </div>
+            </article>
+
+            <article class="restaurant-menu-card">
+              <p class="restaurant-category">Craft Coffee</p>
+              <h3>Signature Heart Latte</h3>
+              <p>
+                House-roasted espresso with velvet micro-foam and Madagascar vanilla.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="restaurant-section restaurant-evening-section">
+        <div class="restaurant-container restaurant-split restaurant-split-reverse">
+          <div>
+            <p class="restaurant-eyebrow">Evening Experience</p>
+            <h2>An easy downtown dinner spot.</h2>
+            <p>
+              As the lights dim, Ember & Grain shifts into a relaxed evening bistro
+              with shareable plates, seasonal entrées, and space for date nights,
+              small groups, and private gatherings.
+            </p>
+
+            <div class="restaurant-actions">
+              <a href="#events" class="restaurant-button restaurant-button-secondary">
+                Private Events
+              </a>
+              <a href="#reservations" class="restaurant-button restaurant-button-primary">
+                Book a Table
+              </a>
+            </div>
+          </div>
+
+          <div class="restaurant-image-card">
+            <img
+              src="images/empty-table.jpg"
+              alt="Candlelit restaurant table"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="reservations" class="restaurant-section restaurant-visit-section">
+        <div class="restaurant-container restaurant-visit-grid">
+          <div>
+            <p class="restaurant-eyebrow">Visit Ember & Grain</p>
+            <h2>Open for coffee, lunch, dinner, and Sunday brunch.</h2>
+            <p>
+              Located downtown with easy access for lunch meetings, evening dinners,
+              and weekend brunch.
+            </p>
+
+            <div class="restaurant-actions">
+              <a href="tel:5551234567" class="restaurant-button restaurant-button-primary">
+                Call (555) 123-4567
+              </a>
+              <a href="#pickup" class="restaurant-button restaurant-button-secondary">
+                Order Pickup
+              </a>
+            </div>
+          </div>
+
+          <div class="restaurant-info-card">
+            <h3>Hours & Location</h3>
+
+            <p>
+              <strong>Address</strong><br />
+              412 North Meridian St, Suite 10<br />
+              Downtown Metro
+            </p>
+
+            <p>
+              <strong>Phone</strong><br />
+              (555) 123-4567
+            </p>
+
+            <p>
+              <strong>Email</strong><br />
+              hello@emberandgrain.example
+            </p>
+
+            <p>
+              <strong>Hours</strong><br />
+              Mon – Thu: 7:00 AM – 9:00 PM<br />
+              Fri – Sat: 7:00 AM – 11:00 PM<br />
+              Sun: 8:00 AM – 3:00 PM (Brunch Only)
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="pickup" class="restaurant-footer">
+      <div class="restaurant-container restaurant-footer-grid">
+        <div>
+          <p class="brand-name">Ember & Grain</p>
+          <p>Crafted Flavors. Urban Roots.</p>
+        </div>
+
+        <div>
+          <a href="#pickup" class="restaurant-button restaurant-button-primary">
+            Order Pickup
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

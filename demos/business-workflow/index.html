@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Business Workflow Tool Demo | Able Software & Web</title>
+  <meta
+    name="description"
+    content="Interactive business workflow tool demo showing how client requests, job notes, follow-ups, and custom fields can be organized in one place."
+  />
+
+  <link rel="stylesheet" href="workflow-demo.css" />
+</head>
+
+<body>
+  <header class="demo-header">
+    <div class="demo-container header-grid">
+      <div>
+        <a href="../../index.html" class="brand-link">Able Software & Web</a>
+        <p class="header-kicker">Interactive Demo</p>
+      </div>
+
+      <nav class="demo-nav" aria-label="Demo navigation">
+        <a href="../../demos.html">All Demos</a>
+        <a href="../../contact.php" class="nav-cta">Request a Similar Tool</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="demo-hero">
+      <div class="demo-container hero-grid">
+        <div>
+          <p class="eyebrow">Business Workflow Tool Demo</p>
+          <h1>ClientFlow</h1>
+          <p class="hero-subtitle">
+            A custom internal web app prototype for managing client requests,
+            job details, follow-ups, and business-specific workflow information.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <h2>Example Business</h2>
+          <p class="business-name">River City Property Services</p>
+          <p>
+            This demo uses a property service business as the example, but the same
+            structure can be adapted for salons, contractors, nonprofits, consultants,
+            repair businesses, and other client-focused organizations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-mode-section">
+      <div class="demo-container">
+        <div class="demo-mode-banner">
+          <strong>Demo Mode:</strong>
+          This is an interactive frontend prototype. Demo changes happen in your browser only.
+          A production version could include secure login, database-backed records,
+          reporting, notifications, calendar sync, and business-specific integrations.
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section">
+      <div class="demo-container">
+        <div class="app-shell">
+          <div class="app-toolbar">
+            <div>
+                <p class="app-label">ClientFlow Dashboard</p>
+                <h2>
+                Requests & Client Records
+                <span class="app-demo-pill">Demo App</span>
+                </h2>
+            </div>
+
+            <div class="toolbar-actions">
+            <button type="button" class="secondary-form-button" id="resetDemoButton">
+                Reset Demo
+            </button>
+
+            <button type="button" class="primary-button" id="newRequestButton">
+                + New Request
+            </button>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <label class="sr-only" for="searchInput">Search requests</label>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search by client, phone, address, service, job ID..."
+            />
+          </div>
+
+          <div class="filter-row" aria-label="Status filters">
+            <button type="button" class="filter-button active" data-status="All">All</button>
+            <button type="button" class="filter-button" data-status="New">New</button>
+            <button type="button" class="filter-button" data-status="Scheduled">Scheduled</button>
+            <button type="button" class="filter-button" data-status="In Progress">In Progress</button>
+            <button type="button" class="filter-button" data-status="Waiting">Waiting</button>
+            <button type="button" class="filter-button" data-status="Completed">Completed</button>
+          </div>
+
+          <div class="summary-grid" id="summaryGrid">
+            <!-- Summary cards render with JavaScript -->
+          </div>
+
+          <div class="workspace-grid">
+            <section class="request-list-panel" aria-label="Request list">
+              <div class="panel-heading">
+                <h3>Client Requests</h3>
+                <p id="resultCount">0 records</p>
+              </div>
+
+              <div class="request-list" id="requestList">
+                <!-- Request rows render with JavaScript -->
+              </div>
+            </section>
+
+            <section class="detail-panel" aria-label="Selected request details">
+              <div id="detailPanel">
+                <!-- Selected request details render with JavaScript -->
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section">
+      <div class="demo-container support-grid">
+        <article class="support-card">
+          <p class="eyebrow">Customizable Fields</p>
+          <h2>Built around the details your business actually tracks.</h2>
+          <p>
+            The property service fields in this demo are examples. A real tool could
+            track the details that matter in your industry.
+          </p>
+
+          <div class="industry-examples">
+            <div>
+              <h3>Salon / Wellness</h3>
+              <p>Stylist preference, color formula notes, allergies, appointment history.</p>
+            </div>
+
+            <div>
+              <h3>Contractor / Repair</h3>
+              <p>Measurements, materials, permits, job photos, customer approvals.</p>
+            </div>
+
+            <div>
+              <h3>Nonprofit / Community</h3>
+              <p>Household needs, appointment history, assistance type, follow-up dates.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="support-card dark-card">
+          <p class="eyebrow">Production Possibilities</p>
+          <h2>What a full version could include</h2>
+          <ul class="feature-list">
+            <li>Secure staff login and user roles</li>
+            <li>Database-backed client and job records</li>
+            <li>Email or SMS follow-up reminders</li>
+            <li>Calendar or scheduling integration</li>
+            <li>Reports, exports, and custom dashboards</li>
+            <li>Mobile-friendly field use</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="demo-container cta-box">
+        <p class="eyebrow">Need something similar?</p>
+        <h2>Start with your current workflow.</h2>
+        <p>
+          If your business is tracking customers, jobs, requests, or follow-ups across
+          texts, spreadsheets, email, and paper notes, Able Software & Web can help
+          explore a right-sized tool for your process.
+        </p>
+
+        <div class="cta-actions">
+          <a href="../../contact.php" class="primary-link">Request a Workflow Review</a>
+          <a href="../../demos.html" class="secondary-link">Back to All Demos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="newRequestModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="newRequestTitle">
+    <div class="modal-header">
+      <div>
+        <p class="app-label">New Client Request</p>
+        <h2 id="newRequestTitle">Add a request during a call</h2>
+      </div>
+
+      <button type="button" class="icon-button" id="closeModalButton" aria-label="Close new request form">
+        ×
+      </button>
+    </div>
+
+    <form id="newRequestForm" class="request-form">
+      <div class="form-grid two-columns">
+        <div class="form-field">
+          <label for="clientName">Client / Organization Name</label>
+          <input id="clientName" name="clientName" type="text" required placeholder="Example: Jamie Carter" />
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required placeholder="(555) 123-4567" />
+        </div>
+      </div>
+
+      <div class="form-grid two-columns">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="client@example.com" />
+        </div>
+
+        <div class="form-field">
+          <label for="preferredContact">Preferred Contact</label>
+          <select id="preferredContact" name="preferredContact">
+            <option>Phone</option>
+            <option>Text</option>
+            <option>Email</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="address">Address / Location</label>
+        <input id="address" name="address" type="text" required placeholder="Street address or job location" />
+      </div>
+
+      <div class="form-grid two-columns">
+        <div class="form-field">
+          <label for="serviceType">Service Type</label>
+          <select id="serviceType" name="serviceType">
+            <option>Seasonal Cleanup</option>
+            <option>Mowing</option>
+            <option>Gutter Cleaning</option>
+            <option>Mulching</option>
+            <option>Aeration</option>
+            <option>Property Walkthrough</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="priority">Priority</label>
+          <select id="priority" name="priority">
+            <option>Medium</option>
+            <option>High</option>
+            <option>Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="summary">Request Summary</label>
+        <textarea
+          id="summary"
+          name="summary"
+          rows="4"
+          required
+          placeholder="What does the client need?"
+        ></textarea>
+      </div>
+
+      <div class="form-grid two-columns">
+        <div class="form-field">
+          <label for="propertyType">Property Type</label>
+          <select id="propertyType" name="propertyType">
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Commercial / Multi-unit</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="serviceFrequency">Service Frequency</label>
+          <select id="serviceFrequency" name="serviceFrequency">
+            <option>One-time</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Seasonal</option>
+            <option>As needed</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-grid two-columns">
+        <div class="form-field">
+          <label for="gateAccess">Gate / Access Notes</label>
+          <input id="gateAccess" name="gateAccess" type="text" placeholder="Gate code, lockbox, parking, etc." />
+        </div>
+
+        <div class="form-field">
+          <label for="equipmentNeeded">Equipment Needed</label>
+          <input id="equipmentNeeded" name="equipmentNeeded" type="text" placeholder="Mower, ladder, checklist, etc." />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="nextAction">Next Action</label>
+        <input
+          id="nextAction"
+          name="nextAction"
+          type="text"
+          placeholder="Example: Prepare estimate and follow up tomorrow"
+        />
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="secondary-form-button" id="cancelRequestButton">
+          Cancel
+        </button>
+        <button type="submit" class="primary-button">
+          Add Request
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal-backdrop hidden" id="addNoteModal" aria-hidden="true">
+  <div class="modal-card small-modal-card" role="dialog" aria-modal="true" aria-labelledby="addNoteTitle">
+    <div class="modal-header">
+      <div>
+        <p class="app-label">Internal Note</p>
+        <h2 id="addNoteTitle">Add a note to this request</h2>
+      </div>
+
+      <button type="button" class="icon-button" id="closeNoteModalButton" aria-label="Close add note form">
+        ×
+      </button>
+    </div>
+
+    <form id="addNoteForm" class="request-form">
+      <div class="form-field">
+        <label for="noteText">Note</label>
+        <textarea
+          id="noteText"
+          name="noteText"
+          rows="5"
+          required
+          placeholder="Example: Customer asked for a follow-up call after 3 PM."
+        ></textarea>
+      </div>
+
+      <p class="form-helper-text">
+        Demo notes are saved locally in this browser. A production version would save notes
+        to a secure database with timestamps and staff user details.
+      </p>
+
+      <div class="form-actions">
+        <button type="button" class="secondary-form-button" id="cancelNoteButton">
+          Cancel
+        </button>
+        <button type="submit" class="primary-button">
+          Save Note
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="workflow-demo.js"></script>
+</body>
+</html>
